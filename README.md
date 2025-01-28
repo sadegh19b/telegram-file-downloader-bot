@@ -2,6 +2,21 @@
 
 A Telegram bot that allows users to send files, images, audio, video, and voice messages from Telegram and receive download links in return.
 
+## Table of Contents
+- [Telegram File Downloader Bot](#telegram-file-downloader-bot)
+  - [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Important Notes](#important-notes)
+  - [Requirements](#requirements)
+  - [Setup Instructions](#setup-instructions)
+  - [Proxy Configuration (Optional)](#proxy-configuration-optional)
+  - [Usage](#usage)
+  - [Webhook Management](#webhook-management)
+    - [Setting Webhook](#setting-webhook)
+    - [Removing Webhook](#removing-webhook)
+  - [Security Notes](#security-notes)
+  - [License](#license)
+
 ## Features
 
 - Accepts all types of files:
@@ -15,6 +30,21 @@ A Telegram bot that allows users to send files, images, audio, video, and voice 
 - Automatically cleans up files every night at midnight
 - Secure file handling
 - Proxy support for restricted networks
+
+## Important Notes
+
+⚠️ **File Size Limitation**: According to [Telegram Bot FAQ](https://core.telegram.org/bots/faq#how-do-i-download-files):
+- Maximum file size: 20MB for downloads via getFile method
+- Maximum file size: 50MB for bot file uploads
+- Currently, larger files are not supported by Telegram Bot API
+
+## Requirements
+
+- PHP 7.4 or higher
+- Composer
+- Web server (Apache/Nginx)
+- SSL certificate (required for Telegram webhooks)
+- Cron (for cleanup task)
 
 ## Setup Instructions
 
@@ -87,22 +117,6 @@ If you need to use a proxy to connect to Telegram servers:
 3. The bot will respond with a download link
 4. Files are automatically cleaned up every night at midnight
 
-## Security Notes
-
-- Make sure your `downloads` and `uploads` directories are properly secured
-- Configure your web server to handle file downloads securely
-- Don't expose sensitive files through the download URL
-- Set appropriate file size limits in your PHP configuration
-- When using a proxy, prefer HTTPS or SOCKS5 for better security
-
-## Requirements
-
-- PHP 7.4 or higher
-- Composer
-- Web server (Apache/Nginx)
-- SSL certificate (required for Telegram webhooks)
-- Cron (for cleanup task)
-
 ## Webhook Management
 
 ### Setting Webhook
@@ -116,6 +130,14 @@ If you need to use a proxy to connect to Telegram servers:
   - You want to stop the bot
   - You want to move the bot to a different server
   - You're troubleshooting webhook issues
+
+## Security Notes
+
+- Make sure your `downloads` and `uploads` directories are properly secured
+- Configure your web server to handle file downloads securely
+- Don't expose sensitive files through the download URL
+- Set appropriate file size limits in your PHP configuration
+- When using a proxy, prefer HTTPS or SOCKS5 for better security
 
 ## License
 
