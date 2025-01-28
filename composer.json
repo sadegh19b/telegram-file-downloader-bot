@@ -1,0 +1,17 @@
+{
+    "name": "telegram/file-downloader-bot",
+    "description": "A Telegram bot for downloading files, images, audio, videos, and voice messages from Telegram",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.4",
+        "longman/telegram-bot": "^0.80",
+        "vlucas/phpdotenv": "^5.5",
+        "monolog/monolog": "^2.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "TelegramDownloaderBot\\": "src/"
+        }
+    }
+}
