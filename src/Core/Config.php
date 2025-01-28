@@ -22,8 +22,6 @@ class Config
             'webhook_url' => $_ENV['WEBHOOK_URL'],
             'base_url' => $_ENV['BASE_URL'],
             'proxy_url' => $_ENV['PROXY_URL'] ?? null,
-            'download_path' => dirname(__DIR__, 2) . '/downloads/',
-            'upload_path' => dirname(__DIR__, 2) . '/uploads/'
         ];
     }
 

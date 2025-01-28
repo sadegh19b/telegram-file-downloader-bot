@@ -15,8 +15,8 @@ try {
     $telegram->enableLimiter();
 
     // Set custom Download and Upload paths
-    $telegram->setDownloadPath(Config::get('download_path'));
-    $telegram->setUploadPath(Config::get('upload_path'));
+    $telegram->setDownloadPath(dirname(__DIR__) . '/downloads/');
+    $telegram->setUploadPath(dirname(__DIR__) . '/uploads/');
 
     // Add commands path
     $telegram->addCommandsPath(__DIR__ . '/Commands');
