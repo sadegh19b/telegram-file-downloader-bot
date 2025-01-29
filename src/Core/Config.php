@@ -1,6 +1,6 @@
 <?php
 
-namespace TelegramDownloaderBot\Core;
+namespace TelegramFileDownloaderBot\Core;
 
 use Dotenv\Dotenv;
 

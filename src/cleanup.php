@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use TelegramDownloaderBot\Core\Config;
+use TelegramFileDownloaderBot\Core\Config;
 
 // Load configuration
 Config::load();

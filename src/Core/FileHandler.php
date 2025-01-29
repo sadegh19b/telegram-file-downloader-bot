@@ -1,6 +1,6 @@
 <?php
 
-namespace TelegramDownloaderBot\Core;
+namespace TelegramFileDownloaderBot\Core;
 
 use Longman\TelegramBot\Request;
 use Longman\TelegramBot\Entities\File;

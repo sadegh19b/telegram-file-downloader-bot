@@ -4,8 +4,7 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use Longman\TelegramBot\Exception\TelegramException;
 use Longman\TelegramBot\Request;
-use TelegramDownloaderBot\Core\Config;
-use TelegramDownloaderBot\Core\TelegramClient;
+use TelegramFileDownloaderBot\Core\TelegramClient;
 
 try {
     $client = new TelegramClient();

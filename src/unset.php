@@ -2,7 +2,7 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use TelegramDownloaderBot\Core\TelegramClient;
+use TelegramFileDownloaderBot\Core\TelegramClient;
 
 try {
     $client = new TelegramClient();

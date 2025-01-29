@@ -1,10 +1,10 @@
 <?php
 
-namespace TelegramDownloaderBot\Commands\Message;
+namespace TelegramFileDownloaderBot\Commands\Message;
 
 use Longman\TelegramBot\Commands\SystemCommand;
 use Longman\TelegramBot\Entities\ServerResponse;
-use TelegramDownloaderBot\Core\FileHandler;
+use TelegramFileDownloaderBot\Core\FileHandler;
 
 class GenericmessageCommand extends SystemCommand
 {
